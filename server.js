@@ -4,7 +4,6 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = 3000;
 
-// Връзка с MongoDB - забележи, че вместо 'localhost' използваме името на услугата 'database' от Docker
 const mongoUri = process.env.MONGO_URI || 'mongodb://database:27017/my-docker-db';
 
 mongoose.connect(mongoUri)
